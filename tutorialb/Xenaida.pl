@@ -22,7 +22,7 @@ sub EVENT_ITEM {
   if (plugin::check_handin(\%itemcount, 59955 => 1)) {
     quest::say("Thanks!  Very helpful!"); 
     #quest::summonitem(59765); # Item: Shimmering Vial of Vigor -- This doesn't happen on Live
-    quest::updatetaskactivity(1448, 4);
+    quest::updatetaskactivity(1448, 3);
   }
   plugin::return_items(\%itemcount);
 }

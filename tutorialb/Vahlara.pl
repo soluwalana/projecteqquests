@@ -12,7 +12,7 @@ sub EVENT_SPAWN {
 
 sub EVENT_SAY {
   if ($text=~/hail/i) {
-    if (quest::istaskactivityactive(1448, 3)) {
+    if (quest::istaskactivityactive(1448, 2)) {
       if ($class eq "Berserker" || $class eq "Rogue" || $class eq "Shaman" || $class eq "Ranger") {
         quest::summonitem(67111); # Item: Gloomingdeep Kobold Chain Sleeves
       }
@@ -38,8 +38,8 @@ sub EVENT_SAY {
   if ($text=~/others/i) {
     quest::say("We have many wounded and they need bandages.  If you can find any gloomingdeep silk, bring it to me and I can make more bandages.  I'll reward you with whatever burlap armor pieces I can find.");
     quest::popup("Armor Class", "<br> Now that you have the sleeves equipped, notice in your inventory window that your Armor Class or \"AC\" went up.  The higher your armor class, the harder it will be for your enemies to hit you.<br><br>Vahlara can make you some burlap armor if you are able to bring her pieces of Gloomingdeep Spider Silk from the mines beyond. <br><br><c \"#F07F00\">Check your Quest Window (ALT +Q) to check the next step in your Basic Training.</c>");
-    if (quest::istaskactivityactive(1448, 3)) {
-      quest::updatetaskactivity(1448, 3);
+    if (quest::istaskactivityactive(1448, 2)) {
+      quest::updatetaskactivity(1448, 2);
     }
   }
   if ($text=~/bandages/i) {

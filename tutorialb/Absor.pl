@@ -13,25 +13,25 @@ sub EVENT_ITEM {
     quest::summonitem(59950); #Sharpened Dagger
     quest::emote("takes the weapon from you and begins to polish and balance it.  When he hands it back to you it scarcely resembles the decaying old thing that you were using. 'There you go.  That should work much better.'");
     quest::popup("Weapons", "<br>Absor has fixed up your weapon and placed it back in your inventory.  Pick up the improved weapon in your inventory and drop it on the rectangular icon in the middle of your inventory window.  This will auto-equip the weapon back in your primary weapon slot.<br><br> <c \"#F07F00\">Open your Quest Window [ALT + Q] to check the next step in your Basic Training.<br><br>Hint: Use the find command (CTRL + F) to find the next npc for your basic training.</c>");
-    quest::updatetaskactivity(1448, 2); #Task: Basic Training
+    quest::updatetaskactivity(1448, 1); #Task: Basic Training
   }
   elsif (plugin::check_handin(\%itemcount, 9998 => 1)) { #Short Sword*
     quest::summonitem(59951); #Sharpened Short Sword
     quest::emote("takes the weapon from you and begins to polish and balance it.  When he hands it back to you it scarcely resembles the decaying old thing that you were using. 'There you go.  That should work much better.'");
     quest::popup("Weapons", "<br>Absor has fixed up your weapon and placed it back in your inventory.  Pick up the improved weapon in your inventory and drop it on the rectangular icon in the middle of your inventory window.  This will auto-equip the weapon back in your primary weapon slot.<br><br> <c \"#F07F00\">Open your Quest Window [ALT + Q] to check the next step in your Basic Training.<br><br>Hint: Use the find command (CTRL + F) to find the next npc for your basic training.</c>");
-    quest::updatetaskactivity(1448, 2); #Task: Basic Training
+    quest::updatetaskactivity(1448, 1); #Task: Basic Training
   }
   elsif (plugin::check_handin(\%itemcount, 9999 => 1)) { #Club*
     quest::summonitem(59952); #Polished Club
     quest::emote("takes the weapon from you and begins to polish and balance it.  When he hands it back to you it scarcely resembles the decaying old thing that you were using. 'There you go.  That should work much better.'");
     quest::popup("Weapons", "<br>Absor has fixed up your weapon and placed it back in your inventory.  Pick up the improved weapon in your inventory and drop it on the rectangular icon in the middle of your inventory window.  This will auto-equip the weapon back in your primary weapon slot.<br><br> <c \"#F07F00\">Open your Quest Window [ALT + Q] to check the next step in your Basic Training.<br><br>Hint: Use the find command (CTRL + F) to find the next npc for your basic training.</c>");
-    quest::updatetaskactivity(1448, 2); #Task: Basic Training
+    quest::updatetaskactivity(1448, 1); #Task: Basic Training
   }
   elsif (plugin::check_handin(\%itemcount, 55623 => 1)) { #Dull Axe*
     quest::summonitem(59953); #Sharpened Axe
     quest::emote("takes the weapon from you and begins to polish and balance it.  When he hands it back to you it scarcely resembles the decaying old thing that you were using. 'There you go.  That should work much better.'");
     quest::popup("Weapons", "<br>Absor has fixed up your weapon and placed it back in your inventory.  Pick up the improved weapon in your inventory and drop it on the rectangular icon in the middle of your inventory window.  This will auto-equip the weapon back in your primary weapon slot.<br><br> <c \"#F07F00\">Open your Quest Window [ALT + Q] to check the next step in your Basic Training.<br><br>Hint: Use the find command (CTRL + F) to find the next npc for your basic training.</c>");
-    quest::updatetaskactivity(1448, 2); #Task: Basic Training
+    quest::updatetaskactivity(1448, 1); #Task: Basic Training
   }
   elsif (plugin::check_handin(\%itemcount, 54229 => 1)) {
     #Chunk of Bronze -> Bronze Gloomingdeep weapons

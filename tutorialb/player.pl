@@ -54,9 +54,6 @@ sub EVENT_POPUPRESPONSE {
     if (quest::istaskactivityactive(8804, 1)) {
       quest::updatetaskactivity(8804, 1); #Task: Hotbars
     }
-    if (quest::istaskactivityactive(1448, 7)) {
-      quest::updatetaskactivity(1448, 7); #Task: Basic Training
-    }
   }
   if ($popupid == 10) {
     quest::popup("Swimming", "<br>When underwater, your remaining air is shown in the <c \"#00A000\">Air Remaining</c> window. If your air supply runs out, you will begin taking damage.<br><br>As your swimming skill increases, so will your air supply and swimming speed. The more time you spend in the water, the better swimmer you will become!");
@@ -112,8 +109,8 @@ sub EVENT_POPUPRESPONSE {
   }
   if ($popupid == 24) {
     quest::popup("Custom Chat Channels", "<br>While regular chat channels cover a lot of situations, custom <c \"#00A000\">Chat Channels</c> let you keep in touch with friends easily even when you are not in the same guild or group. You can use these commands to join a custom channel.<br><br><c \"#F0F000\">/join Chat Channel Name</c><br>If you use /join you can enter a custom <c \"#00A000\">Chat Channel</c> to talk to anyone who joins it. You can set which window the text goes to. To speak in a channel, use the number associated it preceded by a \"/\". For example, \"/2 Hello\" lets you say hello to your second channel.<br><br><c \"#F0F000\">/autojoin Chat Channel Name</c><br>You can use /autojoin to set up default custom <c \"#00A000\">Chat Channels</c> to join without having to manually enter them when entering the game. Autojoin is very useful in streamlining your chat preferences in regards to custom channels.<br><br><c \"#F07F00\">Click 'OK' to close the window and complete this tutorial.</c>");
-    if (quest::istaskactivityactive(1448, 6)) {
-      quest::updatetaskactivity(1448, 6);
+    if (quest::istaskactivityactive(1448, 5)) {
+      quest::updatetaskactivity(1448, 5);
     }
     quest::signal(189018); #NPC: Prathun
   }
@@ -122,8 +119,8 @@ sub EVENT_POPUPRESPONSE {
   }
   if ($popupid == 26) {
     quest::popup("Combat Abilities", "<br><c \"#F0F000\">Using Combat Abilities:</c><br>For a description of what your combat abilities can do, <c \"#00F0F0\">left click</c> on the S button in your <c \"#00A000\">Combat Abilities Window</c>, then select the name of the combat ability in the window that pops up.  The description will appear in the lower portion of this <c \"#00A000\">Combat Skills Window</c>.<br><br>To use an ability, select your target and then <c \"#00F0F0\">left click</c> on the hotkey you have created in your <c \"#00A000\">Combat Abilities Window</c> or <c \"#00A000\">Hotbar</c>.<br><br><c \"#F0F000\">Endurance:</c><br>Most combat abilities require endurance to cast or to keep active.  Endurance is represented by the yellow bar below your hit point meter in the <c \"#00A000\">Player Window</c>. Much like hit points, endurance will regenerate over time, but unlike hit points they will regenerate at the same rate whether you are sitting or standing as long as you are not actively attacking something.<br><br>If you are in a rested state and sitting (there will be a yellow swirl in your <c \"#00A000\">Player Window</c> when this is true), both endurance and hit points regenerate at a much faster rate than normal.<br><br>If you wish to read these lessons again, simply ask Rytan to [review] them.<br><br><c \"#F07F00\">Click 'OK' to continue.</c>");
-    if (quest::istaskactivityactive(1448, 5)) {
-      quest::updatetaskactivity(1448, 5); #Task: Basic Training
+    if (quest::istaskactivityactive(1448, 4)) {
+      quest::updatetaskactivity(1448, 4); #Task: Basic Training
     }
     quest::signal(189019); #NPC: Rytan
   }

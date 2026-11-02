@@ -4,12 +4,13 @@
 # items: 54604, 8500
 
 sub EVENT_SAY {
-  if (quest::istaskactivityactive(5032, 2)) {
-    quest::say("Well done! If you collected any Gloomingdeep Silk, be sure to give it to Vahlara. She can use it to make bandages for the other wounded slaves. Here are some coins I found on a dead kobold. Good work, my friend!");
-  }
-  else {
-    if ($text=~/hail/i) {
-      quest::say("Greetings, $name. We're glad you found your way to our camp. We can use all the help we can get!");   
+  if ($text=~/hail/i) {
+    if (quest::istaskactivityactive(5032, 2)) {
+      quest::say("Well done! If you collected any Gloomingdeep Silk, be sure to give it to Vahlara. She can use it to make bandages for the other wounded slaves. Here are some coins I found on a dead kobold. Good work, my friend!");
+      quest::updatetaskactivity(5032, 2);
+    }
+    else {
+      quest::say("Greetings, $name. We're glad you found your way to our camp. We can use all the help we can get!");
       quest::say("The Gloomingdeep spider tamer is able to brew anti-venom from a rare flower that grows in gloomingdeep. If we had this flower,we may be able to use it to save the lives of our comardes.");
       quest::updatetaskactivity(5166, 0);
     }
